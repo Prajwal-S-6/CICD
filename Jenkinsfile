@@ -1,10 +1,6 @@
 pipeline {
     agent any
 
-    tools {
-        maven 'Maven 3'
-    }
-
     environment {
         JAR_NAME = 'demo-0.0.1-SNAPSHOT.jar'
     }
