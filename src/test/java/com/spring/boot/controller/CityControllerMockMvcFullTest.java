@@ -18,6 +18,7 @@ class CityControllerMockMvcFullTest {
     @Autowired
     private MockMvc mvc;
 
+
     @Test
     public void shouldSaveListOfCities() throws Exception {
         mvc.perform(MockMvcRequestBuilders.put("/cities").content("{ \"name\": \"Los Angeles\" }").contentType("application/json")).andExpect(status().isOk());
